@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: 'roboto slab';
+    .container{
+        width: 75vw;
+        height: 100vh;
+        margin: 0 auto;
+        margin-top: 10px;
+        .nav{
+            width: 100%;
+            .logo{
+                float: left;
+                width: 65px;
+                img{
+                    filter: invert();
+                }
+            }
+            .navbar{
+                float: right;
+                ul{
+                    li{
+                        float: left;
+                        list-style-type: none;
+                        padding: 15px;
+                        margin: 0 5px;
+                        background-color: tomato;
+                        font-size: 15px;
+                        transition: all .5s ease-out;
+                        border-radius: 10px;
+                        a{
+                            color: white;
+                            text-decoration: none;
+                        }
+                    }
+                    li:hover{
+                        background-color: rgb(119, 0, 0);
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .hero{
+            img{
+                margin: 10px 0;
+                width: 100%;
+                border-radius: 10px;
+                transition: all .5s ease-out;
+            }
+            img:hover{
+                border: 2px solid tomato;
+                border-radius: 50px;
+            }
+        }
+        .services{
+            .services-title{
+                text-align: center;
+                margin: 15px 0;
+            }
+            .service{
+                width: 33%;
+                float: left;
+                text-align: center;
+                .service-title{
+                    margin: 10px 0;
+                }
+                .service-description{
+                    margin: 10px 0;
+                }
+            }
+        }
+    }
+}
